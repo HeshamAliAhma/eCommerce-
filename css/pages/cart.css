@@ -1,0 +1,98 @@
+main.flex{
+    margin-top: 3rem;
+    & section.cart {
+        gap: 20rem;
+
+        width: 100%;
+        & .product{
+            margin-bottom: 30px;
+            max-width: 450px;
+            margin-inline: auto;
+            justify-content: space-between;
+            border-top: 3px solid var(--blue-button);
+            border-radius: 0.22rem;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            
+            
+            & div.flex{
+                gap: 0.8rem;
+                text-align: center;
+                & .decrease{
+                    font-size: 2rem;
+                }
+                & .increase{
+                    font-size: 2rem;
+                }
+                & .decrease:hover,
+                & .increase:hover{
+                    scale: 1.2;
+                    color: var(--blue-button);
+                }
+                & .quantiy{
+                    font-size: 1.3rem;
+                    font-weight: bold;
+                    color: var(--blue-button);
+                }
+            }
+
+
+            & p.price{
+                font-weight: bold;
+                font-size: 1.4rem;
+
+            }
+            & button i.fa-solid{
+                font-size: 1.4rem;
+                margin-left: 0.88rem;
+                color: rgb(199, 0, 40);
+            }
+        }
+    }
+
+    & button.clear{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: .8rem;
+        border-radius: 0.3rem;
+        margin-left: 0.88rem;
+        color: white;
+        margin-top: 1rem;
+        padding: 10px;
+        background-color: rgb(199, 0, 40);
+        & i.fa-solid{
+        color: white;
+        }
+    }
+
+    & section.summary{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        margin-top: 1rem;
+        text-align: center;
+        border-radius: 1rem;
+        & .summary-title{
+            font-size: 1.4rem;
+            font-weight: bold;
+            padding-block: 1rem;
+            border-bottom: 1px solid gray;
+        }
+        & .subtotal{
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        & button.checkout{
+            width: 100%;
+            padding-block: 10px;
+            font-weight: bold;
+            color: var(--bodyBG);
+            background-color: var(--blue-button);
+        }
+        & a{
+            display: inline-block;
+            color: rgb(199, 0, 40);;
+            padding: 10px;
+        }
+    }
+}
+

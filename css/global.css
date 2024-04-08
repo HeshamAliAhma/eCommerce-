@@ -1,0 +1,118 @@
+/* =================
+    Color Style
+==================== */
+
+:root{
+    --bodyBG:#f6f6f6;
+    --bodyFont:#2b3445;
+    --blue : #9fc5ef;
+    --blue-button : #1976d2;
+    --icon: #40464d;
+}
+
+body{
+    background-color:var(--bodyBG) ;
+    color:var(--bodyFont);
+}
+
+
+
+main{
+    width: 80%;
+    margin-inline: auto;
+}
+@media (width < 600px){
+    main{
+        width: 100%;
+    }
+}
+
+
+
+
+/* ==================
+    My Classes
+===================== */
+.border{
+    border: 3px solid red;
+}
+a{
+    text-decoration: none !important;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+/* ====================== 
+    General Style
+========================= */
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    box-sizing: border-box ;
+}
+*::before , *::after{
+    box-sizing: inherit;
+}
+
+html{
+    font-family: system-ui, -apple-system;
+    scroll-behavior: smooth;
+
+    /* scrollbar-color:#9e4673 #3d4a59; */
+}
+button:disabled{
+    opacity: 0.5 !important;
+    cursor: not-allowed !important;
+    scale: 1 !important;
+}
+/* ====================== 
+    Scrollbar Style
+========================= */
+::-webkit-scrollbar{
+    width: 0.88rem;
+}
+::-webkit-scrollbar-track{
+    border: 7px solid #292c3b;
+    box-shadow: inset 0 0 2.5px 2px rgba(0,0,0,0.5);
+    border-radius: 4px;
+    background-color: #d4d4d8;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 2px;
+    background: #999;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #555;
+    cursor: pointer;
+}
+
+/* ======================
+    HTML Style
+========================= */
+
+a,button{
+    all:unset;
+    display: inline-block;
+}
+button:active , a:active{
+    scale: 0.9;
+}
+button:hover , a:hover{
+    cursor: pointer;
+    transition: 0.2s;
+}
+li{
+    list-style: none;
+}
+
+/* ======================
+General Style For This Project
+ ======================== */
+
+
+
+.fa-solid {
+    color: var(--icon);
+}

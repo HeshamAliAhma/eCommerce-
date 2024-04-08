@@ -1,0 +1,15 @@
+footer{
+    width: 100%;
+    background-color: var(--bodyFont);
+    color: var(--bodyBG);
+    padding-block: 1rem;
+    border-radius: .7rem .7rem 0 0;
+    text-align: center;
+    margin-top: 3rem;
+    p{
+        font-weight: bold;
+        span{
+            color: var(--blue-button);
+        }
+    }
+}
